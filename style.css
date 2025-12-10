@@ -93,7 +93,7 @@ section {
 
 /* === ABOUT FIXED === */
 .about {
-    padding-top: 150px;
+    padding-top: 100px;
     padding-bottom: 150px;
 
     display: flex;
@@ -245,8 +245,8 @@ section {
 /* === GAME UI MODERN LOOK === */
 
 .games-section {
-    margin-top: 160px;
-    margin-bottom: 260px;
+    margin-top: 100px;
+    margin-bottom: 160px;
     display: flex;
     justify-content: center;
 }
@@ -328,3 +328,9 @@ section {
         width: 90%;
     }
 }
+
+.hero {
+    padding-top: 80px;   /* biarkan seperti semula */
+    padding-bottom: 20px; /* tambahkan jarak bawah kecil */
+}
+
