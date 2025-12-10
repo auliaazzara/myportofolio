@@ -334,3 +334,45 @@ section {
     padding-bottom: 20px; /* tambahkan jarak bawah kecil */
 }
 
+.about {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.projects {
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
+
+.contact {
+    padding-top: 80px;
+    padding-bottom: 120px;
+}
+
+.games-section {
+    margin-top: 100px;
+    margin-bottom: 120px;
+}
+
+@media(max-width: 768px) {
+
+    .about {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .projects {
+        padding-top: 80px;
+        padding-bottom: 90px;
+    }
+
+    .contact {
+        padding-top: 60px;
+        padding-bottom: 90px;
+    }
+
+    .games-section {
+        margin-top: 70px;
+        margin-bottom: 90px;
+    }
+}
