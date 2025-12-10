@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Elegan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+    <div class="logo">AULIA</div>
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#games">Games</a></li> <!-- DITAMBAHKAN -->
+    </ul>
+</nav>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <img src="foto/aulia.jpeg" alt="Foto Profil" class="profile-pic">
+        <h1>Halo, Saya <span class="highlight">Aulia Azzara Nur Ramdani</span></h1>
+        <p>Web Developer & Designer</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+
+    <!-- ICON -->
+    <div class="about-icon">
+        <img src="foto/aul.jpeg" alt="Icon Developer">
+    </div>
+
+    <!-- CARD -->
+    <div class="about-card">
+        <h2>About Me</h2>
+        <p>Saya adalah siswa Rekayasa Perangkat Lunak yang menyukai pengembangan aplikasi dan website.</p>
+        <p>Saya terbiasa menggunakan HTML, CSS, JavaScript, dan Python.</p>
+        <p>Saya senang mempelajari teknologi baru dan terus mengembangkan kemampuan saya untuk membuat</p> 
+        <p>solusi digital yang bermanfaat.</p>
+    </div>
+
+</section>
+
+
+<!-- PROJECTS -->
+    <section id="projects" class="projects">
+      <h2 class="section-title">Project Unggulan</h2>
+      <div class="project-list">
+        <div class="project-card">
+          <img src="foto/motor device (1).jpeg" class="project-img" alt="Project 1" />
+          <h3>Project Robotic</h3>
+          <p>Membuat project menggunakan motor device.</p>
+          <p>Dengan menggunakan sensor ultrasonik mengukur jarak.</p>
+        </div>
+
+        <div class="project-card">
+          <img src="foto/IoT.jpeg" class="project-img" alt="Project 2" />
+          <h3>Dashboard IoT</h3>
+          <p>Cara mengatur lampu lewat aplikasi di smartphonne.</p>
+        </div>
+
+        <div class="project-card">
+          <img
+            src="foto/mengukur jarak.jpeg"
+            class="project-img"
+            alt="Project 3" />
+          <h3>Mengukur Jarak</h3>
+          <p>Alat yang membaca jarak antara sensor dan object secara otomatis menggunakan sensor ultrasonik.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="contact-icons">
+
+    <!-- Telepon -->
+    <a href="https://wa.me/6285815650460" class="icon">
+        <img src="foto/whatsapp1-removebg-preview.png" alt="Phone">
+    </a>
+
+    <!-- Email -->
+    <a href="mailto:auliaazzaa834@gmail.com" class="icon">
+        <img src="foto/email1-removebg-preview.png" alt="Email">
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://instagram.com/1iezzera" target="_blank" class="icon">
+        <img src="foto/instagram1-removebg-preview.png" alt="Instagram">
+    </a>
+
+    <!-- Lokasi -->
+    <a href="https://maps.app.goo.gl/xt3QZWQkwNZziHXRA" target="_blank" class="icon">
+        <img src="foto/maps-removebg-preview.png" alt="Maps">
+    </a>
+
+    <!-- YouTube -->
+<a href="https://youtube.com/shorts/QdLgGYqyX-8?si=Q1XhGFYp2yOV3ir-" target="_blank" class="icon">
+    <img src="foto/youtube.png" alt="YouTube">
+</a>
+
+
+</div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <strong>auliaazzara834@gmail.com</strong></p>
+        <p>Instagram: <strong>1iezzera</strong></p>
+    </section>
+
+<section id="games" class="games-section">
+    <div class="games-wrapper">
+
+        <!-- Game Matematika -->
+        <div class="game-card math">
+            <h2>Game Matematika</h2>
+            <p id="math-question">Soal muncul di sini...</p>
+            <input type="number" id="math-answer" placeholder="Jawaban kamu">
+            <button onclick="checkMath()">Jawab</button>
+            <p id="math-result"></p>
+            <p>Score: <span id="math-score">0</span></p>
+        </div>
+
+        <!-- Game Bahasa Inggris -->
+        <div class="game-card english">
+            <h2>Game Bahasa Inggris</h2>
+            <p id="eng-question">Apa arti kata: "dog" ?</p>
+            <input type="text" id="eng-answer" placeholder="Masukkan jawaban...">
+            <button onclick="checkEnglish()">Jawab</button>
+            <p id="eng-result"></p>
+            <p>Score: <span id="eng-score">0</span></p>
+        </div>
+
+    </div>
+</section>
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>

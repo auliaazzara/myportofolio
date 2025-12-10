@@ -1,0 +1,330 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background: linear-gradient(to bottom, #b3d9ff, #e3f2fd, #ffffff);
+    color: #2a4d69;
+    background-attachment: fixed;
+}
+
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(230, 245, 255, 0.7);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 3px 20px rgba(0,0,0,0.08);
+    border-bottom: 1px solid rgba(255,255,255,0.7);
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #003f5c;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #003f5c;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #5fa8d3;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    text-align: center;
+}
+
+.profile-pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 12px;
+    border: 4px solid #ffffff;
+    object-fit: cover;
+    margin-bottom: 20px;
+    box-shadow:
+        0 0 20px rgba(255,255,255,0.8),
+        0 0 40px rgba(179,217,255,0.6);
+}
+
+.hero h1 {
+    font-size: 32px;
+    color: #003f5c;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #2d5d72;
+}
+
+/* GENERAL SECTION */
+section {
+    padding: 120px 10%;
+    text-align: center;
+}
+
+/* === ABOUT FIXED === */
+.about {
+    padding-top: 150px;
+    padding-bottom: 150px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-card {
+    background: white;
+    width: 550px;
+    border-radius: 20px;
+    padding: 40px;
+    text-align: left;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.about-icon {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.about-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* === PROJECTS FIXED === */
+.projects {
+    padding-top: 200px;
+    padding-bottom: 300px;
+}
+
+.project-list {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.project-card {
+    flex: 1;
+    max-width: 300px;
+    padding: 25px;
+    background: rgba(179,217,255,0.45);
+    border-radius: 18px;
+    border: 1px solid rgba(179,217,255,0.6);
+    box-shadow: 0 10px 25px rgba(90,140,180,0.2);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* === CONTACT === */
+.contact {
+    padding-top: 100px;
+    padding-bottom: 250px;
+}
+
+.contact p {
+    color: #003f5c;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    background: rgba(240, 248, 255, 0.5);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+}
+
+.icon img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+}
+
+.icon:hover {
+    background: rgba(230, 240, 255, 0.8);
+    transform: translateY(-6px);
+}
+
+/* === GAME SECTION === */
+.games-section {
+    margin-top: 200px;
+    margin-bottom: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.games-wrapper {
+    display: flex;
+    gap: 60px;
+}
+
+.game-card {
+    width: 300px;
+    padding: 25px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(100,140,180,0.2);
+    text-align: center;
+}
+
+.game-card button {
+    background-color: #5fa8d3;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.game-card button:hover {
+    background-color: #4a93bd;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .about {
+        flex-direction: column;
+    }
+
+    .project-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* === GAME UI MODERN LOOK === */
+
+.games-section {
+    margin-top: 160px;
+    margin-bottom: 260px;
+    display: flex;
+    justify-content: center;
+}
+
+.games-wrapper {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* CARD GAME */
+.game-card {
+    width: 320px;
+    background: rgba(255,255,255,0.75);
+    backdrop-filter: blur(12px);
+    padding: 28px;
+    border-radius: 22px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+    text-align: center;
+    transition: 0.35s ease;
+    border: 1px solid rgba(255,255,255,0.6);
+}
+
+.game-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 45px rgba(100,150,200,0.25);
+}
+
+/* JUDUL GAME */
+.game-card h3 {
+    font-size: 24px;
+    margin-bottom: 18px;
+    color: #003f5c;
+}
+
+/* DESKRIPSI GAME */
+.game-card p {
+    font-size: 16px;
+    color: #2d5d72;
+    margin-bottom: 20px;
+}
+
+/* TOMBOL MAIN */
+.game-card button {
+    background: linear-gradient(to right, #5fa8d3, #4a93bd);
+    color: white !important;
+    padding: 10px 22px;
+    border-radius: 12px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.game-card button:hover {
+    background: linear-gradient(to right, #4a93bd, #3e84aa);
+    transform: scale(1.05);
+}
+
+/* INPUT GAME (kalau digunakan) */
+.game-card input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 2px solid #b3d9ff;
+    margin-bottom: 15px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+    .games-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .game-card {
+        width: 90%;
+    }
+}
